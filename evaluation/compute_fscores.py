@@ -10,9 +10,9 @@ import argparse
 # arguments to run the script
 parser = argparse.ArgumentParser()
 parser.add_argument("--path", type=str,
-                    default='.../CA-SUM/Summaries/exp1/reg0.5/SumMe/results/split0',
+                    default='/kaggle/working/ca-sum-dataset/Summaries/exp1/reg0.5/SumMe/results/split0',
                     help="Path to the json files with the scores of the frames for each epoch")
-parser.add_argument("--dataset", type=str, default='SumMe', help="Dataset to be used")
+parser.add_argument("--dataset", type=str, default='datasets/georgelifinrell/summe-video-summarization', help="Dataset to be used")
 parser.add_argument("--eval", type=str, default="max", help="Eval method to be used for f_score reduction (max or avg)")
 
 args = vars(parser.parse_args())
@@ -22,7 +22,7 @@ eval_method = args["eval"]
 
 results = [f for f in listdir(path) if f.endswith(".json")]
 results.sort(key=lambda video: int(video[6:-5]))
-dataset_path = '.../CA-SUM/data/' + dataset + '/eccv16_dataset_' + dataset.lower() + '_google_pool5.h5'
+dataset_path = '/kaggle/input/' + dataset + '/eccv16_dataset_' + dataset.lower() + '_google_pool5.h5'
 
 f_score_epochs = []
 for epoch in results:                       # for each epoch ...

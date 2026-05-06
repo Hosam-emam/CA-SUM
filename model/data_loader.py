@@ -16,9 +16,13 @@ class VideoData(Dataset):
         """
         self.mode = mode
         self.name = video_type.lower()
-        self.datasets = ['.../CA-SUM/data/SumMe/eccv16_dataset_summe_google_pool5.h5',
-                         '.../CA-SUM/data/TVSum/eccv16_dataset_tvsum_google_pool5.h5']
-        self.splits_filename = ['.../CA-SUM/data/splits/' + self.name + '_splits.json']
+        # self.datasets = ['.../CA-SUM/data/SumMe/eccv16_dataset_summe_google_pool5.h5',
+        #                  '.../CA-SUM/data/TVSum/eccv16_dataset_tvsum_google_pool5.h5']
+        # self.splits_filename = ['.../CA-SUM/data/splits/' + self.name + '_splits.json']
+
+        self.datasets = ['/kaggle/input/datasets/georgelifinrell/summe-video-summarization/eccv16_dataset_summe_google_pool5.h5',
+                         '/kaggle/input/datasets/georgelifinrell/summe-video-summarization/eccv16_dataset_tvsum_google_pool5.h5']
+        self.splits_filename = ['/kaggle/working/ca-sum-dataset/data/splits' + self.name + '_splits.json']
         self.split_index = split_index
 
         if 'summe' in self.splits_filename[0]:
