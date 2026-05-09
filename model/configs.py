@@ -4,7 +4,7 @@ import torch
 from pathlib import Path
 import pprint
 
-save_dir = Path('/kaggle/working/ca-sum-dataset/Summaries/exp1')
+save_dir = Path('/kaggle/working/CA-SUM/Summaries/exp1')
 
 
 def str2bool(v):

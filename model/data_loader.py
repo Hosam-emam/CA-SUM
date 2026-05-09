@@ -22,7 +22,7 @@ class VideoData(Dataset):
 
         self.datasets = ['/kaggle/input/datasets/georgelifinrell/summe-video-summarization/eccv16_dataset_summe_google_pool5.h5',
                          '/kaggle/input/datasets/georgelifinrell/summe-video-summarization/eccv16_dataset_tvsum_google_pool5.h5']
-        self.splits_filename = ['/kaggle/working/ca-sum-dataset/data/splits/' + self.name + '_splits.json']
+        self.splits_filename = ['/kaggle/working/CA-SUM/data/splits/' + self.name + '_splits.json']
         self.split_index = split_index
 
         if 'summe' in self.splits_filename[0]:

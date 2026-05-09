@@ -10,7 +10,7 @@ import argparse
 # arguments to run the script
 parser = argparse.ArgumentParser()
 parser.add_argument("--path", type=str,
-                    default='/kaggle/working/ca-sum-dataset/Summaries/exp1/reg0.5/SumMe/results/split0',
+                    default='/kaggle/working/CA-SUM/Summaries/exp1/reg0.5/SumMe/results/split0',
                     help="Path to the json files with the scores of the frames for each epoch")
 parser.add_argument("--dataset", type=str, default='summe', help="Dataset to be used")
 parser.add_argument("--eval", type=str, default="max", help="Eval method to be used for f_score reduction (max or avg)")

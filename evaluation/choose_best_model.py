@@ -9,7 +9,7 @@ from scipy.stats import spearmanr, kendalltau, rankdata
 exp_num = sys.argv[1]
 dataset = sys.argv[2]
 
-base_path = "/kaggle/working/ca-sum-dataset/Summaries"
+base_path = "/kaggle/working/CA-SUM/Summaries"
 eligible_datasets = ["TVSum"]
 
 
@@ -31,7 +31,7 @@ def get_corr_coeff(epoch, split_id, reg_factor):
         return None, None
 
     # Read the user annotations from the file
-    annot_path = f"/kaggle/working/ca-sum-dataset/data/{dataset}/ydata-anno.tsv"
+    annot_path = f"/kaggle/working/CA-SUM/data/{dataset}/ydata-anno.tsv"
     with open(annot_path) as annot_file:
         annot = csv.reader(annot_file, delimiter="\t")
         names, user_scores = [], {}
