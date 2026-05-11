@@ -5,7 +5,7 @@ from layers.attention import SelfAttention
 
 
 class CA_SUM(nn.Module):
-    def __init__(self, input_size=768, output_size=1024, block_size=60):
+    def __init__(self, input_size=1024, output_size=1024, block_size=60):
         """ Class wrapping the CA-SUM model; its key modules and parameters.
         
         :param int input_size: The expected input feature size.
