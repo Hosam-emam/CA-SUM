@@ -22,7 +22,7 @@ eval_method = args["eval"]
 
 results = [f for f in listdir(path) if f.endswith(".json")]
 results.sort(key=lambda video: int(video[6:-5]))
-dataset_path = '/kaggle/input/datasets/georgelifinrell/summe-video-summarization' + '/eccv16_dataset_' + dataset.lower() + '_google_pool5.h5'
+dataset_path = '/kaggle/input/datasets/michaelnabil88/tvsum-and-summe-feature-extraction/clip_vit_b_32/' + dataset.lower() + '_clip_base_features.h5'
 
 f_score_epochs = []
 for epoch in results:                       # for each epoch ...
