@@ -20,8 +20,8 @@ class VideoData(Dataset):
         #                  '.../CA-SUM/data/TVSum/eccv16_dataset_tvsum_google_pool5.h5']
         # self.splits_filename = ['.../CA-SUM/data/splits/' + self.name + '_splits.json']
 
-        self.datasets = ['/kaggle/input/datasets/michaelnabil88/tvsum-and-summe-feature-extraction/clip_vit_l_14/summe_clip_large_features.h5',
-                         '/kaggle/input/datasets/michaelnabil88/tvsum-and-summe-feature-extraction/clip_vit_l_14/tvsum_clip_large_features.h5']
+        self.datasets = ['/kaggle/input/datasets/michaelnabil88/tvsum-and-summe-feature-extraction/convnext_base/summe_convnext_base_features.h5',
+                         '/kaggle/input/datasets/michaelnabil88/tvsum-and-summe-feature-extraction/convnext_base/tvsum_convnext_base_features.h5']
         self.splits_filename = ['/kaggle/working/CA-SUM/data/splits/' + self.name + '_splits.json']
         self.split_index = split_index
 
