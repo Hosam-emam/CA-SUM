@@ -62,7 +62,7 @@ def get_config(parse=True, **optional_kwargs):
     parser.add_argument('--video_type', type=str, default='SumMe', help='Dataset to be used')
 
     # Model
-    parser.add_argument('--input_size', type=int, default=1104, help='Feature size expected in the input')
+    parser.add_argument('--input_size', type=int, default=2048, help='Feature size expected in the input')
     parser.add_argument('--block_size', type=int, default=60, help="Size of blocks used inside the attention matrix")
     parser.add_argument('--init_type', type=str, default="xavier", help='Weight initialization method')
     parser.add_argument('--init_gain', type=float, default=1.4142, help='Scaling factor for the initialization methods')
